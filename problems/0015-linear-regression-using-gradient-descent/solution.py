@@ -14,21 +14,16 @@ def linear_regression_gradient_descent(X: np.ndarray, y: np.ndarray, alpha: floa
         Learned weights as a 1D array of shape (n,)
     """
     m, n = X.shape
-    y = y.reshape(-1, 1)  # Ensure y is a column vector
-    theta = np.zeros((n, 1))  # Initialize weights to zeros
+    y = y.reshape(-1, 1)
+    theta = np.zeros((n, 1))
 
-    # Batch gradient descent loop
     for _ in range(iterations):
-        # Predictions: h_theta(x) = X * theta
         predictions = X @ theta
         
-        # Error: predictions - y
         error = predictions - y
         
-        # Gradient of MSE loss: (1/m) * X^T * (X*theta - y)
         gradient = (1 / m) * (X.T @ error)
         
-        # Update weights
         theta = theta - alpha * gradient
 
     return theta.flatten()
