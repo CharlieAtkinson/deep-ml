@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T23:02:42.480Z",
+  "generated_at": "2026-10-18T23:13:34.104Z",
   "items": {
     "math:7": {
       "kind": "math",
@@ -170,6 +170,19 @@
       "path": "math/0034-least-squares-and-the-normal-equations",
       "first_solved_at": "2026-10-18T23:02:42.052Z",
       "last_pushed_at": "2026-10-18T23:02:42.052Z"
+    },
+    "problem:3": {
+      "kind": "problem",
+      "id": "3",
+      "title": "Reshape Matrix",
+      "difficulty": "easy",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/3",
+      "path": "problems/0003-reshape-matrix",
+      "first_solved_at": "2026-10-18T23:13:33.659Z",
+      "last_pushed_at": "2026-10-18T23:13:33.659Z",
+      "language": "python",
+      "lines": 9
     }
   }
 }
